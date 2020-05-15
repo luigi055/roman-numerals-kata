@@ -6,24 +6,28 @@ namespace RomanNumerals
     {
         private const string OneRoman = "I";
         private const string FiveRoman = "V";
+        private const string TenRoman = "X";
 
-        public string Convert(int number)
+        public string Convert(int arabicNumber)
         {
-            if (number == 0) return "";
+            if (arabicNumber == 0) return "";
 
-            if (number == 5) return FiveRoman;
+            if (arabicNumber == 9)
+            {
+                return OneRoman + TenRoman;
+            }
 
-            if (number == 4)
+            if (arabicNumber >= 5)
+            {
+                return FiveRoman + Convert(arabicNumber - 5);
+            }
+
+            if (arabicNumber == 4)
             {
                 return OneRoman + FiveRoman;
             }
 
-            if (number >= 6)
-            {
-                return Convert(--number) + OneRoman;
-            }
-
-            return OneRoman + Convert(--number);
+            return OneRoman + Convert(--arabicNumber);
         }
     }
 }

@@ -14,6 +14,8 @@ namespace RomanNumerals.Test.Unit
         [InlineData(5, "V")]
         [InlineData(6, "VI")]
         [InlineData(7, "VII")]
+        [InlineData(8, "VIII")]
+        [InlineData(9, "IX")]
         public void ConvertArabicNumeralsToRoman(int arabicNumber, string rommanNumber)
         {
             Assert.Equal(rommanNumber, romanNumerals.Convert(arabicNumber));
