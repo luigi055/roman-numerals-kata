@@ -1,0 +1,9 @@
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\bin\Debug\netstandard2.0\RomanNumerals.deps.json
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\bin\Debug\netstandard2.0\RomanNumerals.dll
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\bin\Debug\netstandard2.0\RomanNumerals.pdb
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.csprojAssemblyReference.cache
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.AssemblyInfoInputs.cache
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.AssemblyInfo.cs
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.dll
+C:\Users\pedro\Documents\c#-projects\roman-numerals\RomanNumerals\obj\Debug\netstandard2.0\RomanNumerals.pdb
