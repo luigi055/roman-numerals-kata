@@ -1,47 +1,22 @@
-using System;
 using Xunit;
-using RomanNumerals;
 
 namespace RomanNumerals.Test.Unit
 {
-  public class RomanNumeralsShould
-  {
-    [Fact]
-    public void ConvertOneToI()
+    public class RomanNumeralsShould
     {
-      var romanNumerals = new RomanNumerals();
+        private RomanNumerals romanNumerals = new RomanNumerals();
 
-      var converted = romanNumerals.Convert(1);
-
-      Assert.True(converted == "I");
+        [Theory]
+        [InlineData(1, "I")]
+        [InlineData(2, "II")]
+        [InlineData(3, "III")]
+        [InlineData(4, "IV")]
+        [InlineData(5, "V")]
+        [InlineData(6, "VI")]
+        [InlineData(7, "VII")]
+        public void ConvertArabicNumeralsToRoman(int arabicNumber, string rommanNumber)
+        {
+            Assert.Equal(rommanNumber, romanNumerals.Convert(arabicNumber));
+        }
     }
-    [Fact]
-    public void ConvertTwoToII()
-    {
-      var romanNumerals = new RomanNumerals();
-
-      var converted = romanNumerals.Convert(2);
-
-      Assert.True(converted == "II");
-    }
-    [Fact]
-    public void ConvertThreeToIII()
-    {
-      var romanNumerals = new RomanNumerals();
-
-      var converted = romanNumerals.Convert(3);
-
-      Assert.True(converted == "III");
-    }
-
-    [Fact]
-    public void ConvertFourToIV()
-    {
-      var romanNumerals = new RomanNumerals();
-
-      var converted = romanNumerals.Convert(4);
-
-      Assert.True(converted == "IV");
-    }
-  }
 }
