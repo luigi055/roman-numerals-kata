@@ -2,23 +2,32 @@
 
 namespace RomanNumerals
 {
-
-
-  public class RomanNumerals
-  {
-    private const string OneRoman = "I";
-
-    public string Convert(int number)
+    public class RomanNumerals
     {
+        private const string OneRoman = "I";
+        private const string FiveRoman = "V";
+        private const string TenRoman = "X";
 
-      if (number == 0) return "";
-      if (number == 4)
-      {
+        public string Convert(int arabicNumber)
+        {
+            if (arabicNumber == 0) return "";
 
-        return "IV";
-      }
+            if (arabicNumber == 9)
+            {
+                return OneRoman + TenRoman;
+            }
 
-      return OneRoman + Convert(number - 1);
+            if (arabicNumber >= 5)
+            {
+                return FiveRoman + Convert(arabicNumber - 5);
+            }
+
+            if (arabicNumber == 4)
+            {
+                return OneRoman + FiveRoman;
+            }
+
+            return OneRoman + Convert(--arabicNumber);
+        }
     }
-  }
 }
